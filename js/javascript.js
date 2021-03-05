@@ -114,13 +114,6 @@ $(function () {
         showModal($("#bestCompanyModal"), $('#bestCompanyModalContent'));
     });
 
-    // $(".services-button").on("click", function (header, text) {
-    //     showModal($("#servicesModal"), $('#servicesModalContent'));
-    //     setServicesModalContent(headerNo, textNo);
-    // });
-
-
-
     $(".closeModalBtn").on("click", function () {
         closeModal($("#propertyListingsModal"), $('#propertyListingsContent'));
     });
@@ -132,9 +125,6 @@ $(function () {
     $("#closeServicesModalBtn").on("click", function () {
         closeModal($("#servicesModal"), $('#servicesModalContent'));
     });
-
-
-
 
 });
 
