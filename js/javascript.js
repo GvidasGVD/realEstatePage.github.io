@@ -86,11 +86,11 @@ $(function () {
 
     var imageNo = 0;
     const images = [
-        'url("../images/Hero.JPG")',
-        'url("../images/property5.JPG")',
-        'url("../images/property2.JPG")',
-        'url("../images/property3.JPG")',
-        'url("../images/property4.JPG")',
+        'url("https://gvidasgvd.github.io/realEstatePage.github.io//images/Hero.JPG")',
+        'url("https://gvidasgvd.github.io/realEstatePage.github.io//images/property5.JPG")',
+        'url("https://gvidasgvd.github.io/realEstatePage.github.io//images/property2.JPG")',
+        'url("https://gvidasgvd.github.io/realEstatePage.github.io//images/property3.JPG")',
+        'url("https://gvidasgvd.github.io/realEstatePage.github.io//images/property4.JPG")',
     ]
 
     let section = document.getElementById("top-content");
