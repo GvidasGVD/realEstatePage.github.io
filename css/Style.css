@@ -192,7 +192,7 @@ header ul.is-sticky li a.active {
 
 /* start: top-content section styles*/
 #top-content {
-	background: url('../images/property3.JPG') no-repeat;
+	background: url('https://gvidasgvd.github.io/realEstatePage.github.io/images/property3.JPG') no-repeat;
 	/* background-repeat: no-repeat; */
 	background-size: cover;
 	position: absolute;
@@ -513,7 +513,7 @@ header ul.is-sticky li a.active {
 
 #the-best .flex > img {
 	width: 47%;
-	background: url('../images/houses.JPG') no-repeat center center fixed;
+	background: url('https://gvidasgvd.github.io/realEstatePage.github.io/images/houses.JPG') no-repeat center center fixed;
 	background-size: cover;
 	box-shadow: 0px 0px 3px 3px grey;
 }
