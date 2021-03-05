@@ -104,7 +104,7 @@ $(function () {
             imageNo = 0;
         }
     }
-    setInterval(headerBckgrndImageCarousel, 5000);
+    // setInterval(headerBckgrndImageCarousel, 5000);
 
     $("#propertyListingsBtn").on("click", function () {
         showModal($("#propertyListingsModal"), $('#propertyListingsContent'));
