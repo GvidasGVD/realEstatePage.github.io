@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='keywords' content="butai, nuoma, turto pardavimas, turto nuoma, turtas">
+	<meta name='author' content="Gvidas Pilelis">
+	<meta http-equiv="X-UA-Compatible" content='ie=edge'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<title>NTURTAS</title>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+	<link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css' />
+	<link href='css/Style.css' type='text/css' rel='stylesheet' />
+
+	<script src='https://kit.fontawesome.com/95dc93da07.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js'></script>
+	<script type="text/javascript" src="js/javascript.js" defer></script>
+	<!-- <script type="text/javascript" src="js/filescript.js"></script> -->
+
+
+</head>
+
+<body>
+	<!-- Start: Property listing Modal -->
+	<div class="popup-modal" id="propertyListingsModal">
+		<div class="popup-modal-content" id="propertyListingsContent">
+			<div class="btnPositionRight">
+				<button class="closeModalBtn">Close</button>
+			</div>
+			<div id="propertyInfoBlock">
+				<p>We are verry sorry, but at this time <b>"View All Property Listings"</b>
+					functionality is in progress.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- End: Property listing Modal -->
+	<!-- Start: Best Real Estate Company Modal -->
+	<div class="popup-modal" id="bestCompanyModal">
+		<div class="popup-modal-content" id="bestCompanyModalContent">
+			<div class="btnPositionRight">
+				<button class="closeModalBtn" id="closeCompanyModalBtn">Close</button>
+			</div>
+			<div id="bestCompanyModalInfoBlock">
+				<h2>The best company "NTURTAS</h2>
+				<p>Company story begins in 1995 at Stanford University.
+					Namy Nabeimy was considering Stanford for grad school and Dan Vandan, a student there,
+					was assigned to show him around. By some accounts,
+					they disagreed about nearly everything during that first meeting,
+					but by the following year they struck a partnership. <br>
+					After some time they incorporated "NTURTAS" as a privately held company and after that
+					the company became one of the most famous companies in
+					the real estate world.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- End: Best Real Estate Company Modal -->
+
+	<!-- Start: Services Modal -->
+	<div class="popup-modal" id="servicesModal">
+		<div class="popup-modal-content" id="servicesModalContent">
+			<div class="btnPositionRight">
+				<button class="closeModalBtn" id="closeServicesModalBtn">Close</button>
+			</div>
+			<div id="servicesModalInfoBlock">
+				<h2 id="serivesModalHeader"></h2>
+				<p id="serivesModalText">Some text
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- End: Services Modal -->
+	<div id='mainPageBlock'>
+		<div id="header-container">
+			<header>
+				<div class="flex container">
+					<a id="logo" href="#">NTURTAS</a>
+					<nav>
+						<button id="nav-toggle" class="real-estate-menu">
+							<span class="strip"></span>
+							<span class="strip"></span>
+							<span class="strip"></span>
+						</button>
+						<ul id="nav-menu">
+							<li><a href="#header-container">Home</a></li>
+							<li><a href="#properties">Properties</a></li>
+							<li><a href="#agents">Agents</a></li>
+							<li><a href="#the-best">About Us</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#contact">Contact Us</a></li>
+							<li id='close-flyout'><span class='fas fa-times'></span></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<section id="top-content">
+				<div class="top-content-fade"></div>
+				<div class="top-content-text">
+					<h1>Buy & Sell Real Estate Properties</h1>
+					<br>
+					<p><u>Please note that this page was created for learning purposes only. All agents, data and
+							properties are
+							fictious and do not exsist.</u></p>
+				</div>
+			</section>
+		</div>
+
+		<section id="how-it-works">
+			<div class="container">
+				<h2>How it Works</h2>
+				<div class="flex">
+					<div>
+						<span class='fas fa-home'></span>
+						<h4>Find a Property</h4>
+						<p>You can find a lot of properties in this web page</p>
+					</div>
+					<div>
+						<span class='fas fa-dollar-sign'></span>
+						<h4>Buy a Property</h4>
+						<p>You can find agents who can help you to buy a property</p>
+					</div>
+					<div>
+						<span class='fas fa-chart-line'></span>
+						<h4>Invest</h4>
+						<p>Never miss an opportunity to invest money in real estate!</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="properties">
+			<div class="container">
+				<h2>Properties</h2>
+				<div id="properties-slider" class="slick">
+					<div class="clickable-property">
+						<img src="images/property1.JPG">
+						<div class="property-details">
+							<p class='price'>€150,000</p>
+							<span class="beds">3 rooms</span>
+							<span class="floor">4 floor</span>
+							<span class='sqrm'>64 m<sup>2</sup></span>
+							<address>
+								Baltijos pr. 245, Klaipeda, Baltija
+							</address>
+						</div>
+					</div>
+
+					<div>
+						<img src="images/property2.JPG">
+						<div class="property-details">
+							<p class='price'>€78,000</p>
+							<span class="beds">2 rooms</span>
+							<span class="floor">2 floor</span>
+							<span class='sqrm'>52 m<sup>2</sup></span>
+							<address>
+								Kauno g. 2A, Klaipeda, Centras
+							</address>
+						</div>
+					</div>
+
+					<div>
+						<img src="images/property3.JPG">
+						<div class="property-details">
+							<p class='price'>€94,000</p>
+							<span class="beds">2 rooms</span>
+							<span class="floor">2 floor</span>
+							<span class='sqrm'>48 m<sup>2</sup></span>
+							<address>
+								Minijos g. 12, Klaipeda, Centras
+							</address>
+						</div>
+					</div>
+					<div>
+						<img src="images/property4.JPG">
+						<div class="property-details">
+							<p class='price'>€90,000</p>
+							<span class="beds">2 rooms</span>
+							<span class="floor">2 floor</span>
+							<span class='sqrm'>58 m<sup>2</sup></span>
+							<address>
+								Mokyklos g. 14, Klaipeda, Miskas
+							</address>
+						</div>
+					</div>
+					<div>
+						<img src="images/property5.JPG">
+						<div class="property-details">
+							<p class='price'>€102,000</p>
+							<span class="beds">4 rooms</span>
+							<span class="floor">8 floor</span>
+							<span class='sqrm'>72 m<sup>2</sup></span>
+							<address>
+								Debreceno g. 12, Klaipeda, Debrecenas
+							</address>
+						</div>
+					</div>
+				</div>
+
+				<button class='rounded' id="propertyListingsBtn">View All Property Listings</button>
+			</div>
+
+		</section>
+
+		<section id='agents'>
+			<div class='container'>
+				<h2>Agents</h2>
+				<p class='large-paragraph'>Any of our great agents will help you to find, to sell, to buy
+					or to rent a property. Do not hesitate and contact them!</p>
+
+				<div class='flex'>
+					<div class='card'>
+						<img src='images/agent2.JPG'>
+						<h3>Johny Smithanson</h3>
+						<p>Real Estate Agent</p>
+						<div class='agentsInfoContainer'>
+							<ul>
+								<li>Work experience: <b>8 years</b></li>
+								<li>Sold properties <b>29</b></li>
+							</ul>
+						</div>
+					</div>
+					<div class='card'>
+						<img src='images/agent3.JPG'>
+						<h3>Tommy Begood</h3>
+						<p>Real Estate Agent / Financial Consultant</p>
+						<div class='agentsInfoContainer'>
+							<ul>
+								<li>Work experience: <b>10 years</b></li>
+								<li>Sold properties <b>34</b></li>
+							</ul>
+						</div>
+					</div>
+					<div class='card'>
+						<img src="images/agent1.JPG">
+						<h3>Angel Arckangel</h3>
+						<p>Real Estate Agent / Rentor</p>
+						<div class='agentsInfoContainer'>
+							<ul>
+								<li>Work experience: <b>9 years</b></li>
+								<li>Sold properties <b>12</b></li>
+							</ul>
+						</div>
+					</div>
+					<div class='card'>
+						<img src='images/agent4.JPG'>
+						<h3>Ricky Balvicky</h3>
+						<p>Real Estate Agent</p>
+						<div class='agentsInfoContainer'>
+							<ul>
+								<li>Work experience: <b>12 years</b></li>
+								<li>Sold properties <b>96</b></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section id='the-best'>
+			<div class='flex container'>
+				<img>
+
+				<div>
+					<h2>This is the best Real Estate Company</h2>
+					<p class='large-paragraph'>If clients are happy - we are happy.</p>
+					<p>Let's keep it short. We try to deliver the best services for our customers. Customers' wishes are
+						our
+						responsibilities. We are:</p>
+					<ul>
+						<li>Fast working team</li>
+						<li>The best negotiators</li>
+						<li>Perfect at helping to sell or buy</li>
+						<li>Trustworthy</li>
+					</ul>
+					<button class='rounded' id="companyModalBtn">Read more</button>
+				</div>
+
+			</div>
+		</section>
+		<section id='services'>
+			<div class='container'>
+				<h2>Services</h2>
+				<div class='flex'>
+
+					<div>
+						<div class='fas fa-home'></div>
+						<div class='services-card-right'>
+							<h3>Search Property</h3>
+							<p>You can find any kind of property in our web page</p>
+							<button class="services-button" onclick="servicesModalHandling('Search Property', 0)">Read more</button>
+						</div>
+					</div>
+
+					<div>
+						<div class='fas fa-dollar-sign'></div>
+						<div class='services-card-right'>
+							<h3>Buy Property</h3>
+							<p>You can find and buy any kind of property. Let our Agents help you!</p>
+							<button class="services-button" onclick="servicesModalHandling('Buy Property', 1)">Read more</button>
+						</div>
+					</div>
+
+					<div>
+						<div class='fas fa-chart-line'></div>
+						<div class='services-card-right'>
+							<h3>Investing</h3>
+							<p>Every time you invest your money you take the risks. Invest wisely!</p>
+							<button class="services-button" onclick="servicesModalHandling('Investing', 2)">Read more</button>
+						</div>
+					</div>
+
+					<div>
+						<div class='fas fa-building'></div>
+						<div class='services-card-right'>
+							<h3>List a Property</h3>
+							<p>You can list your property here in our web page</p>
+							<button class="services-button" onclick="servicesModalHandling('List a Property', 3)">Read more</button>
+						</div>
+					</div>
+
+					<div>
+						<div class='fas fa-search'></div>
+						<div class='services-card-right'>
+							<h3>Property Locator</h3>
+							<p>You can find any kind of property in our web page</p>
+							<button class="services-button" onclick="servicesModalHandling('Property Locator', 4)">Read more</button>
+						</div>
+					</div>
+
+					<div>
+						<div class='fas fa-mobile-alt'></div>
+						<div class='services-card-right'>
+							<h3>Stated Apps</h3>
+							<p>Use your smartphone to serach for the property</p>
+							<button class="services-button" onclick="servicesModalHandling('Stated Apps', 5)">Read more</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id='testimonials'>
+			<div class='container'>
+				<h2>What Our Clients Are Saying</h2>
+				<div id='testimonials-slider'>
+					<div>
+						<blockquote>
+							<p>"I never expected to find a dream flat that fast!! Thank you Agent Moby Dickenson for
+								your help and
+								dedication! I hope to meet you in the future ;)"
+							</p>
+						</blockquote>
+						<div class='testimonials-caption'>
+							<img src='images/client2.JPG'>
+							<p>Rick Denrick</p>
+						</div>
+					</div>
+					<div>
+						<blockquote>
+							<p>"I expected a lot from this company, because they have such a fancy adverts. And I
+								received more!! Thank you
+								guys!"
+							</p>
+						</blockquote>
+						<div class='testimonials-caption'>
+							<img src='images/client1.JPG'>
+							<p>Elly McBelly</p>
+						</div>
+					</div>
+					<div>
+						<blockquote>
+							<p>"The company is cool. The site is cool. Agents are awesome. I had an oportunity even to
+								work with two of them,
+								since one was on vacations for 3 weeks... Cheeers!"
+							</p>
+						</blockquote>
+						<div class='testimonials-caption'>
+							<img src='images/client3.JPG'>
+							<p>Vanera Diesel</p>
+						</div>
+					</div>
+					<div>
+						<blockquote>
+							<p>"They are polite, fast, good comunicators, amazing helpers and does everything you ask.
+								Greetings to all of
+								your team."
+							</p>
+						</blockquote>
+						<div class='testimonials-caption'>
+							<img src='images/client4.JPG'>
+							<p>Thimothy Garsvais</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id='contact'>
+			<div class='container'>
+				<h2>Contact Us</h2>
+				<div class='flex'>
+					<div id='form-container'>
+						<h3>Contact Form</h3>
+						<form>
+							<label for="name">Name</label>
+							<input type="text" id='name' />
+
+							<label for="email">Email</label>
+							<input type="text" id='email' />
+
+							<label for="subject">Subject</label>
+							<input type="text" id='subject' />
+
+							<label for="message">Message</label>
+							<textarea id='message'>Write your message here..</textarea>
+
+							<button class='rounded'>Send Message</button>
+						</form>
+					</div>
+					<div id='address-container'>
+						<label>Address</label>
+						<address>
+							Baltijos pr. 457, Klaipeda, Center, Lithuania
+						</address>
+
+						<label>Phone</label>
+						<a href="#">+370 8664 44575</a>
+
+						<label>Email Address</label>
+						<a href="#">info@nturtas.lt</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class='flex container'>
+				<div class='footer-about'>
+					<h5>About Nturtas</h5>
+					<p>Goal driven, young, ambitious team will assist you in real estate business. Do not hesitate and
+						contact any of
+						our Agents.</p>
+				</div>
+				<div class='footer-quick-links'>
+					<h5>Quick Links</h5>
+					<ul>
+						<li><a href="#header-container">Home</a></li>
+						<li><a href="#properties">Properties</a></li>
+						<li><a href="#agents">Agents</a></li>
+						<li><a href="#the-best">About Us</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</div>
+
+				<div class='footer-subscribe'>
+					<h5>Subscribe to our Newsletter</h5>
+					<div id='subscribe-container'>
+						<input type='text' placeholder="Enter Email" />
+						<button class='right-rounded'>Send</button>
+					</div>
+					<h5 class='follow-us'>Follow Us</h5>
+					<ul>
+						<li><a href="https://www.facebook.com/gvidas.gvidas.37/" target='_blank'><span
+									class='fab fa-facebook-f'></span></a></li>
+						<li><a href="https://www.linkedin.com/in/gvidas-pilelis-04832a16b/" target='_blank'><span
+									class='fab fa-linkedin'></span></a>
+						</li>
+						<li><a href="https://github.com/GvidasGVD" target='_blank'><span
+									class='fab fa-github'></span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<small><a href='#header-container'>Copyright &copy; 2019 All rights reserved | For any information
+					please contact page creator.</a></small>
+			<small> Big Thank You goes to: <a href="https://tinypng.com/" target="_blank">tinypng.com</a> |
+				<a href="https://realfavicongenerator.net/" target="_blank"> realfavicongenerator.net</a> |
+				<a href="https://unsplash.com/" target="_blank"> unsplash.com</a>
+			</small>
+		</footer>
+	</div>
+</body>
+
+</html>
