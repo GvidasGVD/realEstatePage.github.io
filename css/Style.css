@@ -383,14 +383,16 @@ header ul.is-sticky li a.active {
 
 #propertyListingsContent.active,
 #bestCompanyModalContent.active,
-#servicesModalContent.active {
+#servicesModalContent.active,
+#agentsInfoContent.active {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
 
 #propertyListingsContent,
 #bestCompanyModalContent,
-#servicesModalContent {
+#servicesModalContent,
+#agentsInfoContent {
 	-webkit-transform: scale(0);
 	transform: scale(0);
 	width: 600px;
@@ -399,13 +401,15 @@ header ul.is-sticky li a.active {
 
 #propertyListingsModal,
 #bestCompanyModal,
-#servicesModal {
+#servicesModal,
+#agentsInfoModal {
 	display: none;
 }
 
 #propertyInfoBlock,
 #bestCompanyModalInfoBlock,
-#servicesModalInfoBlock{
+#servicesModalInfoBlock,
+#agentsInfoBlock {
     display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -467,7 +471,7 @@ header ul.is-sticky li a.active {
 }
 
 #agents .card{
-	width: 23%;
+	width: 250px;
 	background-color: rgb(221, 221, 221);
 	margin-bottom: 2rem;
 	min-width: 200px;
@@ -483,6 +487,7 @@ header ul.is-sticky li a.active {
 	min-width: 200px;
 	/* width: 300px; */
 	height: 250px;
+	cursor: pointer;
 }
 
 #agents .card h3 {
@@ -921,10 +926,6 @@ footer small a:hover {
 	nav ul li a:hover {
 		color: #f69314;
 	}
-
-	#agents .card{
-		width: 30%;
-	}
 }
 
 @media (max-width: 767px)  {
@@ -1030,10 +1031,6 @@ footer small a:hover {
 		margin-top: 2rem;
 	}
 
-	#agents .card{
-		width: 45%;
-	}
-
 }
 
 @media (max-width: 500px) {
@@ -1098,9 +1095,6 @@ footer small a:hover {
 
 	footer {
 		padding: 3rem 0;
-	}
-	#agents .card{
-		width: 55%;
 	}
 
 	#agents .flex {
