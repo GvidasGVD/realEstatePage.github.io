@@ -113,8 +113,12 @@ $(function () {
     $("#companyModalBtn").on("click", function () {
         showModal($("#bestCompanyModal"), $('#bestCompanyModalContent'));
     });
+    
+    $("#agentsInfoModalBtn").on("click", function () {
+        closeModal($("#agentsInfoModal"), $('#agentsInfoContent'));
+    });
 
-    $(".closeModalBtn").on("click", function () {
+    $("#propertyListingsModalBtn").on("click", function () {
         closeModal($("#propertyListingsModal"), $('#propertyListingsContent'));
     });
 
@@ -125,7 +129,6 @@ $(function () {
     $("#closeServicesModalBtn").on("click", function () {
         closeModal($("#servicesModal"), $('#servicesModalContent'));
     });
-
 });
 
 var servicesTextList = [
@@ -158,4 +161,8 @@ function showModal(modal, modalContent) {
 function closeModal(modal, modalContent) {
     modal.fadeOut(200);
     modalContent.removeClass("active");
+}
+
+function showAagentModal(agentNo) {
+    showModal($("#agentsInfoModal"), $('#agentsInfoContent'))
 }
