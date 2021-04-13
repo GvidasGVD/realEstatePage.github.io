@@ -379,6 +379,16 @@ header ul.is-sticky li a.active {
 	background-color: white;
 	border-radius: 4px;
 	z-index: 4;
+	/* overflow-y: auto; */
+}
+
+.modal-image {
+	width: 250px;
+	min-width: 250px;
+	border-radius: 5px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+	box-shadow: 0 0 3px 3px black;
 }
 
 #propertyListingsContent.active,
@@ -391,8 +401,7 @@ header ul.is-sticky li a.active {
 
 #propertyListingsContent,
 #bestCompanyModalContent,
-#servicesModalContent,
-#agentsInfoContent {
+#servicesModalContent {
 	-webkit-transform: scale(0);
 	transform: scale(0);
 	width: 600px;
@@ -408,8 +417,7 @@ header ul.is-sticky li a.active {
 
 #propertyInfoBlock,
 #bestCompanyModalInfoBlock,
-#servicesModalInfoBlock,
-#agentsInfoBlock {
+#servicesModalInfoBlock {
     display: flex;
 	flex-wrap: wrap;
 	align-content: center;
@@ -418,6 +426,27 @@ header ul.is-sticky li a.active {
     align-items: center;
     text-align: left;
 	padding: 0 30px;
+	color: rgb(182, 181, 181);
+}
+
+
+
+/* end: popup-modal */
+/* start: agents modal styles */
+#agentsInfoContent {
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	width: 600px;
+	min-height: 400px;
+	max-height: 500px;
+}
+
+#agentsInfoBlock {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+    align-items: start;
+	padding: 30px;
 	color: rgb(182, 181, 181);
 }
 
@@ -442,15 +471,44 @@ header ul.is-sticky li a.active {
 	color: white;
 }
 
+.right-modal-block {
+	text-align: center;
+}
 
-/* end: popup-modal */
-/* start: agents modal styles */
+.agents-info-headers {
+	font-family: "Roboto", 'Halvetica', 'Sans-Serif';
+    color: black;
+    font-weight: 700;
+}
 
+.agentsInfoNumbers {
+	color: black;
+}
+
+.bottom-modal-block {
+	width: 100%;
+	text-align: center;
+}
+
+.bottom-modal-block-text{
+	margin: 0;
+	line-height: 1.5;
+}
+
+#modalOffice,
+#modalEmail {
+	font-weight: 400;
+	color: rgb(46, 46, 46);
+}
 
 .agents-modal-description{
 	width: 100%;
-
 }
+
+#modalMobile{
+	font-size: 18px;
+}
+
 /* end: agents modal styles */
 /* start: agents styles */
 #agents {
@@ -1031,6 +1089,22 @@ footer small a:hover {
 		margin-top: 2rem;
 	}
 
+	#agentsInfoBlock{
+		justify-content: center;
+	}
+
+	.popup-modal-content {
+		overflow-y: auto;
+	}
+
+	.modal-image {
+		margin-right: 0;
+	}
+
+	.right-modal-block {
+		width: 100%;
+	}
+
 }
 
 @media (max-width: 500px) {
@@ -1100,6 +1174,8 @@ footer small a:hover {
 	#agents .flex {
 		justify-content: center;
 	}
+
+
 }
 
 /* end: media queries */
