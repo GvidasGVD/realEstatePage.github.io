@@ -163,6 +163,23 @@ function closeModal(modal, modalContent) {
     modalContent.removeClass("active");
 }
 
-function showAagentModal(agentNo) {
-    showModal($("#agentsInfoModal"), $('#agentsInfoContent'))
+const SoldProperties = [29, 34, 12, 96];
+const WorthOfSoldProperties = ['2,850,000', '3,450,000', '1,200,000', '7,650,000'];
+const YearsOfExperience = [8, 10, 9, 12];
+const AgentsModalImages = ['https://gvidasgvd.github.io/realEstatePage.github.io/images/agent2.JPG',
+'https://gvidasgvd.github.io/realEstatePage.github.io/images/agent3.JPG',
+'https://gvidasgvd.github.io/realEstatePage.github.io/images/agent1.JPG',
+'https://gvidasgvd.github.io/realEstatePage.github.io/images/agent4.JPG'];
+const AgentsModalPhones = ['+370 604 44487', '+370 604 48799', '+370 604 55222', '+370 604 11114'];
+const AgentsModalEmails = ['johny.smithanson@nturtas.info','tommy.begood@nturtas.info',
+'angel.arckangel@nturtas.info','ricky.balvicky@nturtas.info']
+
+function showAgentModal(agentNo) {
+    showModal($("#agentsInfoModal"), $('#agentsInfoContent'));
+    $("#modalSoldPropertiesNumber").text(SoldProperties[agentNo]);
+    $("#modalSoldPropertiesWorthNumber").text('€' + WorthOfSoldProperties[agentNo]);
+    $("#modalYearsOfExperienceNumber").text(YearsOfExperience[agentNo]);
+    $("#agentsInfoImg").attr('src', AgentsModalImages[agentNo]);
+    $("#modalMobile").text(AgentsModalPhones[agentNo]);
+    $("#modalEmail").text(AgentsModalEmails[agentNo]);
 }
