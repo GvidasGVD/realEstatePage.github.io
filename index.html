@@ -54,10 +54,22 @@
 				<button class="closeModalBtn" id="agentsInfoModalBtn">Close</button>
 			</div>
 			<div id="agentsInfoBlock">
-				<img>
-				<div class="right-modal-block"></div>
-				<p>We are sorry, but at the momment there is no information on the agent.
-				</p>
+				<img class="modal-image" id="agentsInfoImg" src="https://gvidasgvd.github.io/realEstatePage.github.io/images/agent2.JPG">
+				<div class="right-modal-block">
+					<span id="modalSoldPropertiesText" class="agents-info-headers">Sold properties: </span><br>
+					<span id="modalSoldPropertiesNumber" class="agentsInfoNumbers">50</span> <br> <br>
+					<span id="modalSoldPropertiesWorthText" class="agents-info-headers">Worth of sold properties:</span> <br>
+					<span id="modalSoldPropertiesWorthNumber" class="agentsInfoNumbers">$25,000</span> <br> <br>
+					<span id="modalYearsOfExperienceText" class="agents-info-headers">Years of experience:</span> <br>
+					<span id="modalYearsOfExperienceNumber" class="agentsInfoNumbers">7</span>
+
+				</div>
+				<div class="bottom-modal-block">
+					<p class="bottom-modal-block-text agents-info-headers">Mobile: <span id="modalMobile">+370-66685</span></p>	
+					<p class="bottom-modal-block-text agents-info-headers">Office: <span id="modalOffice">900-888-1234</span></p>	
+					<p class="bottom-modal-block-text agents-info-headers">Email: <span id="modalEmail">nturtas@nturtas.info</span></p>	
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -238,7 +250,7 @@
 
 				<div class='flex'>
 					<div class='card'>
-						<img src='https://gvidasgvd.github.io/realEstatePage.github.io/images/agent2.JPG' onclick="showAagentModal(0)">
+						<img src='https://gvidasgvd.github.io/realEstatePage.github.io/images/agent2.JPG' onclick="showAgentModal(0)">
 						<h3>Johny Smithanson</h3>
 						<p>Real Estate Agent</p>
 						<div class='agentsInfoContainer'>
@@ -249,7 +261,7 @@
 						</div>
 					</div>
 					<div class='card'>
-						<img src='https://gvidasgvd.github.io/realEstatePage.github.io/images/agent3.JPG' onclick="showAagentModal(1)">
+						<img src='https://gvidasgvd.github.io/realEstatePage.github.io/images/agent3.JPG' onclick="showAgentModal(1)">
 						<h3>Tommy Begood</h3>
 						<p>Real Estate Agent / Financial Consultant</p>
 						<div class='agentsInfoContainer'>
@@ -260,7 +272,7 @@
 						</div>
 					</div>
 					<div class='card'>
-						<img src="https://gvidasgvd.github.io/realEstatePage.github.io/images/agent1.JPG" onclick="showAagentModal(2)">
+						<img src="https://gvidasgvd.github.io/realEstatePage.github.io/images/agent1.JPG" onclick="showAgentModal(2)">
 						<h3>Angel Arckangel</h3>
 						<p>Real Estate Agent / Rentor</p>
 						<div class='agentsInfoContainer'>
@@ -271,7 +283,7 @@
 						</div>
 					</div>
 					<div class='card'>
-						<img src='https://gvidasgvd.github.io/realEstatePage.github.io/images/agent4.JPG' onclick="showAagentModal(3)">
+						<img src='https://gvidasgvd.github.io/realEstatePage.github.io/images/agent4.JPG' onclick="showAgentModal(3)">
 						<h3>Ricky Balvicky</h3>
 						<p>Real Estate Agent</p>
 						<div class='agentsInfoContainer'>
